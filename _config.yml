@@ -26,7 +26,7 @@ author:
   website: https://dbeley.ovh
 description: >- # this means to ignore newlines until "baseurl:"
   @dbeley's minimalistic, self-hosted photo stream.
-baseurl: "/photos" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://dbeley.ovh/" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: maxvoltar
 github_username: dbeley
