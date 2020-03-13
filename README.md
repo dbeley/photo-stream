@@ -19,11 +19,12 @@ Photo stream is a simpler home for your photos by [@maxvoltar](https://twitter.c
 
 ## Examples
 
-_Feel free to send me your photo streams on [Twitter](https://twitter.com/maxvoltar), or open a PR._
-
 - [maxvoltar.photo](https://maxvoltar.photo)
 - [joeyabanks.photo](https://joeyabanks.photo)
-- ...
+- [photos.alexbaldwin.com](https://photos.alexbaldwin.com)
+- [scotts.camera](https://scotts.camera)
+- [jad.photos](https://jad.photos)
+- [photo.silvandaehn.com](https://photo.silvandaehn.com/)
 
 ## Features
 
@@ -46,7 +47,7 @@ We like to take photos and share them. Problem is it's hard to really own your p
 ### The easy way
 
 1. Fork this repo
-2. Clear the `photos/originals` directory
+2. Clear the `photos/original` directory
 3. Add your own photos
 4. Deploy your forked copy to [Netlify](https://netlify.com) (free by default, you can add your own domain and analytics for a reasonable price)
 5. In your build & deploy settings, set "Build command" to `jekyll build` and "Publish directory" to `_site/`.
@@ -80,6 +81,16 @@ Put your photos (not resized) in the `photos/originals` directory. Optionally yo
 ```sh
 bundle exec jekyll serve
 ```
+
+You can also statically build your site to be uploaded to a regular webhost. 
+```sh
+bundle exec jekyll build
+```
+Now upload the contents of the _site/ directory to your webserver.
+
+### Automating the build & upload with rsync
+Copy the bash script 'build-n-rsync.sh' from the _script directory to the root of your photo-stream folder. 
+Fill in the required credentials & run the script. It will build & upload your site. 
 
 ## Customize
 
@@ -116,6 +127,7 @@ Before publishing your website, Jekyll will resize your photos into 3 different 
 - [@benubois](https://github.com/benubois)
 - [@mattsacks](https://github.com/mattsacks)
 - [@pjaspers](https://github.com/pjaspers)
+- [@cloudz](https://github.com/cloudz)
 
 ## Known issues
 
